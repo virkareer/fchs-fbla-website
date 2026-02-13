@@ -1,0 +1,92 @@
+import { ArrowRight, Trophy, Users, Globe } from 'lucide-react';
+import { Link } from 'react-router-dom';
+
+const Home = () => {
+    return (
+        <div className="space-y-16 pb-16">
+            {/* Hero Section */}
+            <section className="bg-gradient-to-r from-[var(--color-fbla-blue)] to-[#003366] text-white py-20 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-7xl mx-auto text-center">
+                    <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                        Falls Church High School <span className="text-[var(--color-fbla-gold)]">FBLA</span>
+                    </h1>
+                    <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto mb-10">
+                        Inspiring and preparing students to become community-minded business leaders in a global society.
+                    </p>
+                    <div className="flex flex-col sm:flex-row justify-center gap-4">
+                        <Link
+                            to="/about"
+                            className="px-8 py-3 bg-[var(--color-fbla-gold)] text-[var(--color-fbla-blue)] font-bold rounded-lg hover:bg-yellow-400 transition-colors flex items-center justify-center gap-2"
+                        >
+                            Learn More <ArrowRight size={20} />
+                        </Link>
+                        <Link
+                            to="/contact"
+                            className="px-8 py-3 bg-transparent border-2 border-white text-white font-bold rounded-lg hover:bg-white/10 transition-colors"
+                        >
+                            Join FBLA
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
+            {/* Mission Section */}
+            <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="text-center mb-12">
+                    <h2 className="text-3xl font-bold text-[var(--color-fbla-blue)]">Our Mission</h2>
+                    <div className="w-24 h-1 bg-[var(--color-fbla-gold)] mx-auto mt-4 rounded-full"></div>
+                </div>
+
+                <div className="grid md:grid-cols-3 gap-8">
+                    <div className="bg-white p-8 rounded-xl shadow-md border hover:shadow-lg transition-shadow">
+                        <div className="w-12 h-12 bg-blue-100 text-[var(--color-fbla-blue)] rounded-full flex items-center justify-center mb-6">
+                            <Trophy size={24} />
+                        </div>
+                        <h3 className="text-xl font-bold mb-3">Service</h3>
+                        <p className="text-gray-600">
+                            We believe in giving back to our community through meaningful service projects that make a real difference locally and globally.
+                        </p>
+                    </div>
+
+                    <div className="bg-white p-8 rounded-xl shadow-md border hover:shadow-lg transition-shadow">
+                        <div className="w-12 h-12 bg-blue-100 text-[var(--color-fbla-blue)] rounded-full flex items-center justify-center mb-6">
+                            <Users size={24} />
+                        </div>
+                        <h3 className="text-xl font-bold mb-3">Education</h3>
+                        <p className="text-gray-600">
+                            We provide opportunities to learn business skills, leadership principles, and career preparation through workshops and competitions.
+                        </p>
+                    </div>
+
+                    <div className="bg-white p-8 rounded-xl shadow-md border hover:shadow-lg transition-shadow">
+                        <div className="w-12 h-12 bg-blue-100 text-[var(--color-fbla-blue)] rounded-full flex items-center justify-center mb-6">
+                            <Globe size={24} />
+                        </div>
+                        <h3 className="text-xl font-bold mb-3">Progress</h3>
+                        <p className="text-gray-600">
+                            We strive for continuous improvement and innovation, adapting to the changing business landscape to prepare for the future.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* CTA Section */}
+            <section className="bg-gray-100 py-16">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div>
+                        <h2 className="text-3xl font-bold text-[var(--color-fbla-blue)] mb-4">Ready to start your journey?</h2>
+                        <p className="text-lg text-gray-600">Join FCHS FBLA today and discover your potential.</p>
+                    </div>
+                    <Link
+                        to="/contact"
+                        className="px-8 py-3 bg-[var(--color-fbla-blue)] text-white font-bold rounded-lg hover:bg-blue-800 transition-colors shadow-md"
+                    >
+                        Get Involved
+                    </Link>
+                </div>
+            </section>
+        </div>
+    );
+};
+
+export default Home;

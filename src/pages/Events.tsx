@@ -62,7 +62,7 @@ const Events = () => {
 
             <div className="grid gap-6 max-w-4xl mx-auto">
                 {events.map((event, index) => (
-                    <div key={index} className="bg-white rounded-lg shadow-md border-l-4 border-[var(--color-fbla-gold)] p-6 hover:shadow-lg transition-shadow">
+                    <div key={index} className="bg-white rounded-lg shadow-md border-l-4 border-[var(--color-fbla-accent)] p-6 hover:shadow-lg transition-shadow">
                         <h3 className="text-2xl font-bold text-[var(--color-fbla-blue)] mb-2">{event.title}</h3>
                         <p className="text-gray-600 mb-4">{event.description}</p>
 

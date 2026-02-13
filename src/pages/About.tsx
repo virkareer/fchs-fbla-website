@@ -30,15 +30,18 @@ const About = () => {
                 <div>
                     <h2 className="text-2xl font-bold text-[var(--color-fbla-blue)] mb-4">Our History</h2>
                     <p className="text-gray-600 mb-4">
-                        Founded in [Year], the FCHS chapter of FBLA has been a cornerstone of the business department, providing students with opportunities to compete in regional, state, and national competitions.
+                        The FCHS chapter of FBLA has been a cornerstone of the business department, providing students with opportunities to compete in regional, state, and national competitions.
                     </p>
                     <p className="text-gray-600">
                         Over the years, our members have achieved success in various categories including Marketing, Accounting, Web Design, and Public Speaking.
                     </p>
                 </div>
-                <div className="bg-gray-200 h-64 rounded-xl flex items-center justify-center text-gray-400">
-                    {/* Placeholder for group photo */}
-                    <span className="font-medium">Chapter Photo Placeholder</span>
+                <div className="h-64 rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                    <img
+                        src="/src/assets/history_background.JPG"
+                        alt="FCHS FBLA History"
+                        className="w-full h-full object-cover"
+                    />
                 </div>
             </div>
 
@@ -46,12 +49,12 @@ const About = () => {
                 <h2 className="text-2xl font-bold text-[var(--color-fbla-blue)] mb-8 text-center">2025-26 Officer Team</h2>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {officers.map((officer, index) => (
-                        <div key={index} className="bg-white p-6 rounded-lg shadow-md border hover:-translate-y-1 transition-transform duration-300">
+                        <div key={index} className="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:-translate-y-1 transition-transform duration-300">
                             <div className="w-20 h-20 bg-gray-100 rounded-full mx-auto mb-4 flex items-center justify-center text-gray-400">
                                 <User size={40} />
                             </div>
                             <h3 className="text-xl font-bold text-center text-[var(--color-fbla-blue)]">{officer.name}</h3>
-                            <p className="text-center text-[var(--color-fbla-gold)] font-medium">{officer.position}</p>
+                            <p className="text-center text-[var(--color-fbla-accent)] font-medium">{officer.position}</p>
                         </div>
                     ))}
                 </div>

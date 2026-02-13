@@ -20,7 +20,7 @@ const Contact = () => {
                     <div className="space-y-6">
                         <div className="flex items-start gap-4">
                             <div className="bg-white/10 p-3 rounded-lg">
-                                <MapPin size={24} className="text-[var(--color-fbla-gold)]" />
+                                <MapPin size={24} className="text-[var(--color-fbla-accent)]" />
                             </div>
                             <div>
                                 <h3 className="font-bold text-lg mb-1">Our Location</h3>
@@ -30,7 +30,7 @@ const Contact = () => {
 
                         <div className="flex items-start gap-4">
                             <div className="bg-white/10 p-3 rounded-lg">
-                                <Mail size={24} className="text-[var(--color-fbla-gold)]" />
+                                <Mail size={24} className="text-[var(--color-fbla-accent)]" />
                             </div>
                             <div>
                                 <h3 className="font-bold text-lg mb-1">Email</h3>
@@ -40,7 +40,7 @@ const Contact = () => {
 
                         <div className="flex items-start gap-4">
                             <div className="bg-white/10 p-3 rounded-lg">
-                                <Phone size={24} className="text-[var(--color-fbla-gold)]" />
+                                <Phone size={24} className="text-[var(--color-fbla-accent)]" />
                             </div>
                             <div>
                                 <h3 className="font-bold text-lg mb-1">Phone</h3>
@@ -52,14 +52,14 @@ const Contact = () => {
                     <div className="mt-12">
                         <h3 className="font-bold text-lg mb-4">Meeting Times</h3>
                         <p className="text-blue-100">
-                            We meet every [Day] at [Time] in Room [Number].<br />
+                            We meet monthly with dates posted in the GroupMe.<br />
                             All students are welcome to attend!
                         </p>
                     </div>
                 </div>
 
                 {/* Contact Form */}
-                <div className="bg-white p-8 rounded-xl shadow-md border">
+                <div className="bg-white p-8 rounded-xl shadow-md border border-gray-100">
                     <h2 className="text-2xl font-bold text-gray-800 mb-6">Links & Communications</h2>
                     <ul className="space-y-4 mb-8">
                         <li>

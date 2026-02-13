@@ -2,13 +2,17 @@
 
 @theme {
   --color-fbla-blue: #00529b;
-  --color-fbla-gold: #f7c600;
+  --color-fbla-accent: #f7c600;
+  --font-sans: "DM Sans", sans-serif;
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   line-height: 1.5;
   font-weight: 400;
+  letter-spacing: -0.025em;
 
   color-scheme: light;
   color: #213547;

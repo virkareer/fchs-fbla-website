@@ -1,10 +1,7 @@
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Contact = () => {
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        alert('Thank you for your message! This is a demo form.');
-    };
+
 
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -27,7 +24,7 @@ const Contact = () => {
                             </div>
                             <div>
                                 <h3 className="font-bold text-lg mb-1">Our Location</h3>
-                                <p className="text-blue-100">Falls Church High School<br />7521 Jaguar Trail<br />Falls Church, VA 22042</p>
+                                <p className="text-blue-100">Forsyth Central High School<br />131 Almon C. Hill Dr<br />Cumming, GA 30040</p>
                             </div>
                         </div>
 
@@ -37,7 +34,7 @@ const Contact = () => {
                             </div>
                             <div>
                                 <h3 className="font-bold text-lg mb-1">Email</h3>
-                                <p className="text-blue-100">fbla@fchs.edu</p>
+                                <p className="text-blue-100">f43327@forsyth.k12.ga.us</p>
                             </div>
                         </div>
 
@@ -47,7 +44,7 @@ const Contact = () => {
                             </div>
                             <div>
                                 <h3 className="font-bold text-lg mb-1">Phone</h3>
-                                <p className="text-blue-100">(703) 207-4000</p>
+                                <p className="text-blue-100">(770) 887-8151</p>
                             </div>
                         </div>
                     </div>
@@ -63,59 +60,30 @@ const Contact = () => {
 
                 {/* Contact Form */}
                 <div className="bg-white p-8 rounded-xl shadow-md border">
-                    <h2 className="text-2xl font-bold text-gray-800 mb-6">Send a Message</h2>
-                    <form onSubmit={handleSubmit} className="space-y-6">
-                        <div>
-                            <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
-                            <input
-                                type="text"
-                                id="name"
-                                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-                                placeholder="John Doe"
-                                required
-                            />
-                        </div>
+                    <h2 className="text-2xl font-bold text-gray-800 mb-6">Links & Communications</h2>
+                    <ul className="space-y-4 mb-8">
+                        <li>
+                            <a href="#" className="flex items-center space-x-3 text-blue-600 hover:text-blue-800 transition-colors p-3 bg-blue-50 rounded-lg">
+                                <span className="font-bold">GroupMe</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className="flex items-center space-x-3 text-pink-600 hover:text-pink-800 transition-colors p-3 bg-pink-50 rounded-lg">
+                                <span className="font-bold">Instagram</span>
+                            </a>
+                        </li>
+                    </ul>
 
-                        <div>
-                            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-                            <input
-                                type="email"
-                                id="email"
-                                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-                                placeholder="john@example.com"
-                                required
-                            />
+                    <h2 className="text-2xl font-bold text-gray-800 mb-6">Advisor Contact Information</h2>
+                    <div className="space-y-4">
+                        <div className="p-4 bg-gray-50 rounded-lg">
+                            <h3 className="text-xl font-bold text-[var(--color-fbla-blue)] mb-2">Lex Alexander</h3>
+                            <div className="flex items-center space-x-2 text-gray-600">
+                                <Mail size={20} />
+                                <a href="mailto:f43327@forsyth.k12.ga.us" className="hover:text-[var(--color-fbla-blue)] transition-colors">f43327@forsyth.k12.ga.us</a>
+                            </div>
                         </div>
-
-                        <div>
-                            <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">Subject</label>
-                            <input
-                                type="text"
-                                id="subject"
-                                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-                                placeholder="Membership Inquiry"
-                                required
-                            />
-                        </div>
-
-                        <div>
-                            <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
-                            <textarea
-                                id="message"
-                                rows={4}
-                                className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-                                placeholder="How can we help you?"
-                                required
-                            ></textarea>
-                        </div>
-
-                        <button
-                            type="submit"
-                            className="w-full bg-[var(--color-fbla-blue)] text-white font-bold py-3 rounded-lg hover:bg-blue-800 transition-colors flex items-center justify-center gap-2"
-                        >
-                            Send Message <Send size={18} />
-                        </button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>

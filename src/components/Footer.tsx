@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -13,35 +13,28 @@ const Footer = () => {
                     </div>
 
                     <div>
-                        <h3 className="text-xl font-bold mb-4 text-[var(--color-fbla-gold)]">Contact Us</h3>
+                        <h3 className="text-xl font-bold mb-4 text-[var(--color-fbla-gold)]">Advisor Contact</h3>
                         <div className="space-y-2 text-sm text-gray-300">
-                            <div className="flex items-center space-x-2">
-                                <MapPin size={16} className="text-[var(--color-fbla-gold)]" />
-                                <span>Falls Church High School</span>
-                            </div>
+                            <p className="font-bold">Lex Alexander</p>
                             <div className="flex items-center space-x-2">
                                 <Mail size={16} className="text-[var(--color-fbla-gold)]" />
-                                <span>fbla@fchs.edu</span>
-                            </div>
-                            <div className="flex items-center space-x-2">
-                                <Phone size={16} className="text-[var(--color-fbla-gold)]" />
-                                <span>(555) 123-4567</span>
+                                <a href="mailto:f43327@forsyth.k12.ga.us" className="hover:text-white transition-colors">f43327@forsyth.k12.ga.us</a>
                             </div>
                         </div>
                     </div>
 
                     <div>
-                        <h3 className="text-xl font-bold mb-4 text-[var(--color-fbla-gold)]">Quick Links</h3>
+                        <h3 className="text-xl font-bold mb-4 text-[var(--color-fbla-gold)]">Links & Communications</h3>
                         <ul className="space-y-2 text-sm text-gray-300">
+                            <li><a href="#" className="hover:text-white transition-colors">GroupMe</a></li>
+                            <li><a href="#" className="hover:text-white transition-colors">Instagram</a></li>
                             <li><a href="https://www.fbla.org/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">National FBLA</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">Virginia FBLA</a></li>
-                            <li><a href="#" className="hover:text-white transition-colors">School Website</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-                    <p>&copy; {new Date().getFullYear()} Falls Church High School FBLA. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Forsyth Central High School FBLA. All rights reserved.</p>
                 </div>
             </div>
         </footer>

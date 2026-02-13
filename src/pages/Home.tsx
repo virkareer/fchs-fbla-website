@@ -8,7 +8,7 @@ const Home = () => {
             <section className="bg-gradient-to-r from-[var(--color-fbla-blue)] to-[#003366] text-white py-20 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto text-center">
                     <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-                        Falls Church High School <span className="text-[var(--color-fbla-gold)]">FBLA</span>
+                        Forsyth Central High School <span className="text-[var(--color-fbla-gold)]">FBLA</span>
                     </h1>
                     <p className="text-xl md:text-2xl text-blue-100 max-w-3xl mx-auto mb-10">
                         Inspiring and preparing students to become community-minded business leaders in a global society.
@@ -66,6 +66,54 @@ const Home = () => {
                         <p className="text-gray-600">
                             We strive for continuous improvement and innovation, adapting to the changing business landscape to prepare for the future.
                         </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* SLC Announcements Section */}
+            <section className="bg-blue-50 py-16 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-4xl mx-auto">
+                    <div className="text-center mb-10">
+                        <h2 className="text-3xl font-bold text-[var(--color-fbla-blue)]">SLC Competition Announcements & Deadlines</h2>
+                        <div className="w-24 h-1 bg-[var(--color-fbla-gold)] mx-auto mt-4 rounded-full"></div>
+                    </div>
+
+                    <div className="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
+                        <div className="p-6 space-y-6">
+                            <div className="border-l-4 border-red-500 pl-4 py-1">
+                                <h3 className="font-bold text-lg text-gray-800">January 25 - SLC Competition Sign-Ups Due <span className="text-red-500 text-sm font-normal">(Closed)</span></h3>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyz3RivRcZegojmXGdezxqW7bEDejzryysx6K-KV-nGPx5vg/viewform" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm break-all">
+                                    View Form
+                                </a>
+                            </div>
+
+                            <div className="border-l-4 border-red-500 pl-4 py-1">
+                                <h3 className="font-bold text-lg text-gray-800">January 27 - In-House Pre-Submission Events Due <span className="text-red-500 text-sm font-normal">(Closed)</span></h3>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8dpJs3dwKN8hL2l5LZPS1gnC11InaOfQfpFmiRciA6HuGVA/viewform" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm break-all">
+                                    Submit Here
+                                </a>
+                            </div>
+
+                            <div className="border-l-4 border-[var(--color-fbla-gold)] pl-4 py-1">
+                                <h3 className="font-bold text-lg text-gray-800">February 1 - FINAL SLC Pre-Submission Due</h3>
+                                <p className="mb-1 text-sm text-gray-600">Submit here:</p>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9js3e6XdrCo7aOph61vtj--qBa-BxpSnGu3d2Cmqn5fwUgg/viewform" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm break-all">
+                                    Submission Form
+                                </a>
+                            </div>
+
+                            <div className="border-l-4 border-[var(--color-fbla-gold)] pl-4 py-1">
+                                <h3 className="font-bold text-lg text-gray-800">February 1 - Intent to Attend SLC Form Due</h3>
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0eDcg2_WewecM0ml9wDRKDt2EaTNgnioJxncJPnsJY0cAXQ/viewform?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline text-sm break-all">
+                                    Intent to Attend Form
+                                </a>
+                            </div>
+
+                            <div className="border-l-4 border-[var(--color-fbla-gold)] pl-4 py-1">
+                                <h3 className="font-bold text-lg text-gray-800">February 2 - SLC Fees Due</h3>
+                                <p className="text-sm text-gray-600">Attendee or non-attendee. <strong>Preferred payment method: check.</strong></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

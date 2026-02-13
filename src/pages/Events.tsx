@@ -4,25 +4,50 @@ const Events = () => {
     // Placeholder data - this would normally come from a CMS or database
     const events = [
         {
+            title: "SLC Competition Sign-Ups Due",
+            date: "January 25, 2026",
+            time: "11:59 PM",
+            location: "Online",
+            description: "Deadline to sign up for State Leadership Conference competitions. (Closed)",
+            link: "https://docs.google.com/forms/d/e/1FAIpQLSdyz3RivRcZegojmXGdezxqW7bEDejzryysx6K-KV-nGPx5vg/viewform"
+        },
+        {
+            title: "In-House Pre-Submission Events Due",
+            date: "January 27, 2026",
+            time: "11:59 PM",
+            location: "Online",
+            description: "Deadline for in-house pre-submission events. (Closed)",
+            link: "https://docs.google.com/forms/d/e/1FAIpQLSe8dpJs3dwKN8hL2l5LZPS1gnC11InaOfQfpFmiRciA6HuGVA/viewform"
+        },
+        {
+            title: "FINAL SLC Pre-Submission Due",
+            date: "February 1, 2026",
+            time: "11:59 PM",
+            location: "Online",
+            description: "Final deadline for SLC pre-submissions.",
+            link: "https://docs.google.com/forms/d/e/1FAIpQLSd9js3e6XdrCo7aOph61vtj--qBa-BxpSnGu3d2Cmqn5fwUgg/viewform"
+        },
+        {
+            title: "Intent to Attend SLC Form Due",
+            date: "February 1, 2026",
+            time: "11:59 PM",
+            location: "Online",
+            description: "Mandatory form for those planning to attend SLC.",
+            link: "https://docs.google.com/forms/d/e/1FAIpQLSf0eDcg2_WewecM0ml9wDRKDt2EaTNgnioJxncJPnsJY0cAXQ/viewform?usp=sharing"
+        },
+        {
+            title: "SLC Fees Due",
+            date: "February 2, 2026",
+            time: "DURING SCHOOL",
+            location: "Fchs",
+            description: "Payment due for SLC (attendee or non-attendee). Preferred method: check."
+        },
+        {
             title: "Monthly Chapter Meeting",
             date: "October 15, 2026",
             time: "3:15 PM - 4:15 PM",
             location: "Room 101",
             description: "Regular monthly meeting to discuss upcoming competitions and fundraising events."
-        },
-        {
-            title: "Regional Leadership Conference",
-            date: "November 12, 2026",
-            time: "8:00 AM - 3:00 PM",
-            location: "Fairfax High School",
-            description: "Annual regional competition where members compete in various business events."
-        },
-        {
-            title: "Community Service Day",
-            date: "December 5, 2026",
-            time: "9:00 AM - 12:00 PM",
-            location: "Local Food Bank",
-            description: "Volunteer opportunity for all members to give back to the community."
         }
     ];
 

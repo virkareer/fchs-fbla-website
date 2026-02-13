@@ -3,12 +3,18 @@ import { User } from 'lucide-react';
 const About = () => {
     // Placeholder data for officers
     const officers = [
-        { name: "First Last", position: "President" },
-        { name: "First Last", position: "Vice President" },
-        { name: "First Last", position: "Secretary" },
-        { name: "First Last", position: "Treasurer" },
-        { name: "First Last", position: "Historian" },
-        { name: "First Last", position: "Reporter" },
+        { name: "Ryvaan Das", position: "Co-President" },
+        { name: "Vihaan Gupta", position: "Co-President" },
+        { name: "Tanishraj Udhyakumar", position: "Vice President" },
+        { name: "Vaishnavi Nagaraju", position: "Secretary" },
+        { name: "Sahasra Gunda", position: "Reporter" },
+        { name: "Revanth Kapa", position: "Treasurer" },
+        { name: "Hasini Ryali", position: "Activity Chair" },
+        { name: "Aalok Kumar", position: "Junior Officer Lead" },
+        { name: "Vir Kareer", position: "Junior Officer" },
+        { name: "Yash Kareer", position: "Junior Officer" },
+        { name: "Vibhaat Joshi", position: "Junior Officer" },
+        { name: "Vihaan Joshi", position: "Junior Officer" },
     ];
 
     return (
@@ -16,7 +22,7 @@ const About = () => {
             <div className="text-center mb-16">
                 <h1 className="text-4xl font-bold text-[var(--color-fbla-blue)] mb-4">About Us</h1>
                 <p className="max-w-2xl mx-auto text-lg text-gray-600">
-                    The Future Business Leaders of America (FBLA) at Falls Church High School is dedicated to bringing business and education together in a positive working relationship through innovative leadership and career development programs.
+                    The Future Business Leaders of America (FBLA) at Forsyth Central High School is dedicated to bringing business and education together in a positive working relationship through innovative leadership and career development programs.
                 </p>
             </div>
 
@@ -37,7 +43,7 @@ const About = () => {
             </div>
 
             <div>
-                <h2 className="text-2xl font-bold text-[var(--color-fbla-blue)] mb-8 text-center">Meet the Officer Team</h2>
+                <h2 className="text-2xl font-bold text-[var(--color-fbla-blue)] mb-8 text-center">2025-26 Officer Team</h2>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {officers.map((officer, index) => (
                         <div key={index} className="bg-white p-6 rounded-lg shadow-md border hover:-translate-y-1 transition-transform duration-300">
